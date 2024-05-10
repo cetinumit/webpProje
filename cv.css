@@ -1,0 +1,11 @@
+body {
+    background-size: 100vw 100vh;
+    background-image: url('pexels-bri-schneiter-28802-346529.jpg');
+  }
+  
+  .navbar-blurred {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    padding: 10px;
+  }
