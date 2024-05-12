@@ -1,25 +1,43 @@
 body {
   background-size: 100vw 100vh;
-  background-image: url('pexels-bri-schneiter-28802-346529.jpg');
+  background-color: #000000;
 }
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffffda;
+}
+
+/* Navbar brand'in rengi */
+.navbar-light .navbar-brand {
+  color: #ffffffda;
+}
+
+/* Aktif olan sekmenin rengi */
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #ffffff; /* Aktif olan sekmenin rengi */
+  /* Daha fazla stil belirtebilirsiniz */
+}
+
+
 
 .navbar-blurred {
   backdrop-filter: blur(8px);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(29, 29, 29, 0.685);
   border-radius: 0px;
   padding: 10px;
 }
 
 img {
   border-radius: 50%;
-  width: 20vw; 
-  height: 11,25vh;
+  width: 24vw; 
+
 }
 
 .resim {
 
   position: absolute;
-  top: 34%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
@@ -44,10 +62,31 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color: #ffffffea;
   font-size: 5vh;
   text-align: center;
-  font-family: "resim-fontu", sans-serif;
+  text-transform: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.baslik-mesaji {
+
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffffea;
+  font-size: 4vh;
+  text-align: center;
+  text-transform: none;
+  font-family: "resim-fontu", sans-serif ;
 }
 
 @font-face {
@@ -58,7 +97,7 @@ img {
 .biyografi-mesaj{
 
   position: absolute;
-  top: 70%;
+  top: 79%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
@@ -67,8 +106,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  font-size: 2vh;
+  color: #ffffffea;
+  font-size: 1,5vh;
   text-align: center;
-
+width: 45vw;
 }
