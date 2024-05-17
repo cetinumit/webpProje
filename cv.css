@@ -21,8 +21,9 @@ section {
   position: relative;
   display: flex;
   justify-content: space-between;
-  border: 2px solid black;
+  border: 4px solid black;
   margin-bottom: 5px;
+
 }
 
 aside {
@@ -45,14 +46,30 @@ aside img {
 p,
 article {
   margin: 0;
+
 }
 
 p {
-  order: -1;
   font-weight: bold;
+ border-right: 4px solid black;
+ border-bottom: 4px solid black;
 }
 
 article {
   margin-top: 5px;
   flex-grow: 1;
+  text-align: left;
 }
+
+.text-left {
+  position: absolute;
+  right: 10vw;
+  background-color: aqua;
+  text-align: left;
+}
+
+.icerik {
+  display: flex;
+  flex-direction: column;
+}
+
