@@ -1,11 +1,58 @@
 body {
-    background-size: 100vw 100vh;
-    background-image: url('pexels-bri-schneiter-28802-346529.jpg');
-  }
-  
-  .navbar-blurred {
-    backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 0px;
-    padding: 10px;
-  }
+  background-size: 100vw 100vh;
+  background-image: url('—Pngtree—simple\ cv\ asymmetry\ white\ abstract_1346360.png');
+  font-family: Arial, sans-serif;
+}
+
+.navbar-blurred {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+
+aside {
+  flex-shrink: 0;
+}
+
+aside.left {
+  order: -1;
+}
+
+aside.right {
+  order: 1;
+}
+
+aside img {
+  max-width: 250px;
+  height: auto;
+}
+
+p,
+article {
+  margin: 0;
+}
+
+p {
+  order: -1;
+  font-weight: bold;
+}
+
+article {
+  margin-top: 5px;
+  flex-grow: 1;
+}
