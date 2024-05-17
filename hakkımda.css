@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-size: 100vw 100vh;
   background-color: #000000;
@@ -43,24 +49,19 @@ a:hover {
 
 .resim img {
   border-radius: 50%;
-  width: 24vw;
+  width: auto;
   height: 42.66666666666667vh;
 }
 
 .resim {
 
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 
 .hakkimda-mesaji {
 
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  position: relative;
+  top: 0%;
   color: #ffffffea;
   font-size: 5vh;
   text-align: center;
@@ -70,10 +71,7 @@ a:hover {
 
 .baslik-mesaji {
 
-  position: absolute;
-  top: 62%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  position: relative;
   color: #ffffffea;
   font-size: 4vh;
   text-align: center;
@@ -87,122 +85,284 @@ a:hover {
 }
 
 .biyografi-mesaj {
-
-  position: absolute;
-  top: 67vh;
-  left: 50vw;
-  transform: translate(-50%, 0%);
-
+  position: relative;
+  width: 45vw;
 }
 
 .insta {
-  position: absolute;
-  top: 83vh;
-  left: 50vw;
-  transform: translate(-50%, 0%);
+  position: relative;
 }
 
 .insta img {
-  width: 5vw;
-  height: 8, 888888888888889vh;
+  width: auto;
+  height: 3.3333333333333335vh;
 }
 
 .futbol {
-  position: absolute;
-  top: 25%;
-  left: 12.5%;
-  transform: translate(-50%, 0%);
-  z-index: 999;
+  position: relative;
 }
 
 .futbol img {
-  width: 10vw;
-  height: 17, 77777777777778vh;
+  width: auto;
+  height: 10.66666666666667vh;
 }
 
 .futbol-mesaj {
-
-  position: absolute;
-  top: 42vh;
-  left: 12.5%;
-  transform: translate(-50%, 0%);
+  position: relative;
   width: 20vw;
-  height: 10vh;
 }
 
 .diziFilm {
-  position: absolute;
-  top: 25%;
-  left: 87.5%;
-  transform: translate(-50%, 0%);
+  position: relative;
 }
 
+
 .diziFilm img {
-  width: 8vw;
-  height: 14, 22222222222222h;
+  width: auto;
+  height: 10.66666666666667vh;
 }
 
 .diziFilm-mesaj {
 
-  position: absolute;
-  top: 42%;
-  left: 87.5%;
-  transform: translate(-50%, 0%);
+  position: relative;
   width: 20vw;
 }
 
 .müzik {
-  position: absolute;
-  top: 75%;
-  left: 87.5%;
-  transform: translate(-50%, 0%);
+  position: relative;
+
+}
+
+.müzik-mesaj {
+
+  position: relative;
+  width: 20vw;
 }
 
 .müzik img {
-  width: 7vw;
-  height: 12, 44444444444444vh;
+  width: auto;
+  height: 10.66666666666667vh;
   border-radius: 0;
-
 }
 
 .oyun {
-  position: absolute;
-  top: 75%;
-  left: 12.5%;
-  transform: translate(-50%, 0%);
+  position: relative;
+  ;
 }
 
 .oyun img {
-  width: 12vw;
-  height: 21, 33333333333333;
+  width: auto;
+  height: 10.66666666666667vh;
+}
+
+.oyun-mesaj {
+
+  position: relative;
+  width: 20vw;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.üst, .alt {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ana-container {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin-top: 20px;
+}
+
+.futbol-container {
+  position: relative;
+  width: 22vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  margin-top: 20px;
+}
+
+.oyun-container {
+  position: relative;
+  width: 22vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.diziFilm-container {
+  position: relative;
+  width: 22vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin-top: 20px;
+}
+
+.müzik-container {
+  position: relative;
+  width: 22vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
   p {
-    font-size: 7px;
+    font-size: 9px;
+  }
+
+  .hakkimda-mesaji {
+    font-size: 4vh;
+  }
+
+  .resim img {
+    width: 100%;
+  }
+
+  .futbol img {
+
+    width: 100%;
+
+  }
+
+  .diziFilm img {
+
+    width: 100%;
+
+  }
+
+  .müzik img {
+
+    width: 100%;
+
+  }
+
+  .oyun img {
+
+    width: 100%;
+
   }
 }
 
 @media (min-width: 601px) {
   p {
-    font-size: 9px;
+    font-size: 9.75px;
+  }
+
+  .hakkimda-mesaji {
+    font-size: 4vh;
+  }
+
+  .resim img {
+    width: 100%;
+  }
+
+  .futbol img {
+
+    width: 100%;
+
+  }
+
+  .diziFilm img {
+
+    width: 100%;
+
+  }
+
+  .müzik img {
+
+    width: 100%;
+
+  }
+
+  .oyun img {
+
+    width: 100%;
+
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (min-height: 400px) {
   p {
-    font-size: 11px;
+    font-size: 11.5px;
+  }
+
+  .hakkimda-mesaji {
+    font-size: 4vh;
+  }
+
+  .resim img {
+    width: 100%;
+  }
+
+  .futbol img {
+
+    width: 100%;
+
+  }
+
+  .diziFilm img {
+
+    width: 100%;
+
+  }
+
+  .müzik img {
+
+    width: 100%;
+
+  }
+
+  .oyun img {
+
+    width: 100%;
+
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (min-height: 500px) {
   p {
-    font-size: 13px;
+    font-size: 12.5px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (min-height: 600px) {
   p {
-    font-size: 15px
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) and (min-height:720px) {
+  p {
+    font-size: 15px;
   }
 }
