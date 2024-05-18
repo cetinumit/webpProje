@@ -1,11 +1,203 @@
 body {
-    background-size: 100vw 100vh;
-    background-image: url('samsunPanaroma.jfif');
-  }
-  
-  .navbar-blurred {
-    backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 0px;
-    padding: 10px;
-  }
+  background-size: 100vw 100vh;
+  background-color: cornsilk;
+}
+
+h6 {
+
+  font-weight: bold;
+
+
+}
+
+
+.navbar-blurred {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  padding: 10px;
+}
+
+.carousel,
+.carousel-inner {
+  width: 33vw;
+  height: auto;
+  margin-top: 2vh;
+  align-self: center;
+}
+
+.carousel-item img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.samsun-container {
+  position: relative;
+  left: 49.75vw;
+  transform: translate(-50%, 0%);
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 98%;
+  height: auto;
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.samsun-container2 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 9% 3% auto 3% auto 3% auto 3% auto 3% auto 3% auto;
+  grid-template-areas:
+    "baslik baslik"
+    "alt-baslik alt-baslik"
+    "aciklama resim"
+    "alt-baslik2 resim"
+    "aciklama2 resim2"
+    "alt-baslik3 resim2"
+    "aciklama3 resim3"
+    "alt-baslik4 resim3"
+    "aciklama4 resim4"
+    "alt-baslik5 resim4"
+    "aciklama5 resim5"
+    "alt-baslik6 resim5"
+    "aciklama6 resim6"
+  ;
+  gap: 20px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 20px;
+  height: auto;
+}
+
+.baslik {
+  margin-top: 95px;
+  grid-area: baslik;
+}
+
+.alt-baslik {
+  grid-area: alt-baslik;
+}
+
+.aciklama {
+  grid-area: aciklama;
+  height: auto;
+  text-align: justify;
+}
+
+.resim {
+  margin-left: 4.75vw;
+  grid-area: resim;
+  width: 15vw;
+  height: auto;
+}
+
+.alt-baslik2 {
+  grid-area: alt-baslik2;
+}
+
+.aciklama2 {
+  grid-area: aciklama2;
+  height: auto;
+  text-align: justify;
+}
+
+.resim2 {
+  margin-left: 7.5vw;
+  grid-area: resim2;
+  width: 10vw;
+  height: auto;
+}
+
+.alt-baslik3 {
+  grid-area: alt-baslik3;
+}
+
+.aciklama3 {
+  grid-area: aciklama3;
+  height: auto;
+  text-align: justify;
+}
+
+.resim3 {
+  margin-left: 1.5vw;
+  grid-area: resim3;
+  width: 20vw;
+  height: auto;
+}
+
+.alt-baslik4 {
+  grid-area: alt-baslik4;
+}
+
+.aciklama4 {
+  grid-area: aciklama4;
+  height: auto;
+  text-align: justify;
+}
+
+.resim4 {
+  margin-top: 1vh;
+  grid-area: resim4;
+  width: 23vw;
+  height: auto;
+}
+
+.alt-baslik5 {
+  grid-area: alt-baslik5;
+}
+
+.aciklama5 {
+  grid-area: aciklama5;
+  height: auto;
+  text-align: justify;
+}
+
+.resim5 {
+  margin-left: 1.5vw;
+  grid-area: resim5;
+  width: 20vw;
+  height: auto;
+  margin-bottom: 12vh;
+}
+
+.alt-baslik6 {
+  grid-area: alt-baslik6;
+}
+
+.aciklama6 {
+  grid-area: aciklama6;
+  height: auto;
+  text-align: justify;
+}
+
+.resim6 {
+  margin-left: 1.5vw;
+  grid-area: resim6;
+  width: 20vw;
+  height: auto;
+  margin-bottom: 12vh;
+}
+
+.italic-small {
+  font-style: italic;
+  font-size: smaller;
+}
