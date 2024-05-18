@@ -1,0 +1,48 @@
+body {
+    background-size: 100vw 100vh;
+    background-image: url(peakpx.jpg);
+  }
+
+  .navbar-blurred {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    padding: 10px;
+  }
+
+.container{
+background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+width: 23vw;
+display: flex;
+flex-direction: column;
+
+}
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .giris {
+    background-color: orange;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
