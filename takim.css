@@ -1,6 +1,17 @@
 body {
   background-size: 100vw 100vh;
-  background-color: wheat;
+  background-image: url(2616541-material-free-hd-wallpaper-download-widescreen.jpg);
+}
+
+p {
+  margin-right: 10px;
+  text-align: justify;
+  
+}
+
+p:hover{
+
+  cursor: pointer;
 }
 
 .navbar-blurred {
@@ -15,16 +26,14 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-  height: 93vh;
+  height: auto;
   margin: 0 auto;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
-  border: 2px solid blue;
 }
 
 .embed-container {
-  top: 29vh;
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -35,7 +44,120 @@ body {
   align-items: center;
   flex-direction: row;
   gap: 20px;
-  border: 2px solid red;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.banner img {
+
+  width: 98vw;
+  height: auto;
+}
+
+.pContainer1 {
+  width: 90vw;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.pContainer1:hover {
+
+  transform: scale(1.075);
+  background-color: rgb(205, 213, 221);
+  cursor: pointer;
+
+}
+
+.resim {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.ortalı {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.pContainer2 {
+  width: 90vw;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.pContainer2:hover {
+
+  transform: scale(1.075);
+  background-color: rgb(205, 213, 221);
+  cursor: pointer;
+}
+
+.pContainer3 {
+  width: 90vw;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.pContainer3:hover {
+
+  transform: scale(1.075);
+  background-color: rgb(205, 213, 221);
+  cursor: pointer;
+}
+
+.pContainer4 {
+  width: 90vw;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.pContainer4:hover {
+
+  transform: scale(1.075);
+  background-color: rgb(205, 213, 221);
+  cursor: pointer;
+}
+
+.pContainer5 {
+  width: 90vw;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.pContainer5:hover {
+
+  transform: scale(1.075);
+  background-color: rgb(205, 213, 221);
+  cursor: pointer;
+}
+
+.pContainer6 {
+  width: 90vw;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+.pContainer6:hover {
+
+  transform: scale(1.075);
+  background-color: rgb(205, 213, 221);
+  cursor: pointer;
 }
 
 .fwp-embed {
