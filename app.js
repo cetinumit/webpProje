@@ -1,54 +1,54 @@
 new Vue({
-    el: '#iletisim',
+    el: '#app',
     data: {
         form: {
-            isim: '',
+            name: '',
             email: '',
-            Telefon: '',
-            mesaj: ''
+            subject: '',
+            message: ''
         },
         errors: {}
     },
     methods: {
-        formKontrol() {
+        validateForm() {
             this.errors = {};
 
-            if (!this.form.isim) {
-                this.errors.isim = 'Adınızı giriniz.';
+            if (!this.form.name) {
+                this.errors.name = 'Adınızı giriniz.';
             }
 
             if (!this.form.email) {
                 this.errors.email = 'E-posta adresinizi giriniz.';
-            } else if (!this.emailKontrol(this.form.email)) {
+            } else if (!this.validEmail(this.form.email)) {
                 this.errors.email = 'Geçerli bir e-posta adresi giriniz.';
             }
 
-            if (!this.form.telefon) {
-                this.errors.telefon = 'Telefon Numarası alanını doldurunuz.';
+            if (!this.form.subject) {
+                this.errors.subject = 'Konu alanını doldurunuz.';
             }
 
-            if (!this.form.mesaj) {
-                this.errors.mesaj = 'Mesaj alanını doldurunuz.';
+            if (!this.form.message) {
+                this.errors.message = 'Mesaj alanını doldurunuz.';
             }
 
             if (Object.keys(this.errors).length === 0) {
-                this.formGönder();
+                this.submitForm();
             }
         },
-        emailKontrol(email) {
+        validEmail(email) {
             var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\.,;:\s@"]+\.[^<>()[\]\.,;:\s@"]{2,}))$/i;
             return re.test(email);
         },
-        formGönder() {
+        submitForm() {
             // Form verilerini başka bir sayfaya yönlendirme
             localStorage.setItem('formData', JSON.stringify(this.form));
-            window.location.href = 'sonuclar.html';
+            window.location.href = 'result.html';
         },
-        formTemizle() {
-            this.form.isim = '';
+        clearForm() {
+            this.form.name = '';
             this.form.email = '';
-            this.form.Telefon = '';
-            this.form.mesaj = '';
+            this.form.subject = '';
+            this.form.message = '';
             this.errors = {};
         }
     }

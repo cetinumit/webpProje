@@ -16,14 +16,16 @@ h6 {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0px;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 .carousel,
 .carousel-inner {
   width: 33vw;
   height: auto;
-  margin-top: 2vh;
   align-self: center;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
 }
 
 .carousel-item img {

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ümit Çetin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="iletişim.css">
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-blurred">
+
+        <a class="navbar-brand" href="http://webpproje/anaSayfa.html">Ümit Çetin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://webpproje/hakkımda.html">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://webpproje/cv.html">Özgeçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://webpproje/sehir.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://webpproje/takim.html">Takımımız</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://webpproje/ilgiAlani.html">İlgi alanlarım</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://webpproje/iletişim.html">İletişim<span
+                            class="sr-only">(current)</span></a>
+        </div>
+        <form class="form-inline">
+            <a href="giris.html"> <button class="btn btn-outline-warning" type="button">Giriş Yap</button></a>
+        </form>
+        </div>
+        </div>
+        </li>
+        </ul>
+    </nav>
+
+    <div class="ana-container">
+    <div id="iletisim">
+        <h1>İletişim Bilgileri:</h1>
+        <div class="bilgiler">
+
+            <p><strong>Adınız:</strong> {{ formData.isim }}</p>
+            <p><strong>E-posta:</strong> {{ formData.email }}</p>
+            <p><strong>Telefon Numarası:</strong> {{ formData.telefon }}</p>
+            <p><strong>Mesaj:</strong> {{ formData.mesaj }}</p>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#iletisim',
+            data: {
+                formData: {}
+            },
+            created() {
+                this.formData = JSON.parse(localStorage.getItem('formData'));
+            }
+        });
+    </script>
+    </div>
+</body>
+</html>
