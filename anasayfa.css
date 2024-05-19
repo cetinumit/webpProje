@@ -11,29 +11,41 @@ body {
 
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
-    color: #ffffffda}
+    color: #ffffffda
+}
 
 .hosgeldin-mesajı {
-    
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 75vw;
+    height: auto;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffffea;
     font-size: 15vh;
     text-align: center;
-    font-family: "hosgeldin-fontu", sans-serif;    
+    font-family: "hosgeldin-fontu", sans-serif;
 }
 
 @font-face {
     font-family: "hosgeldin-fontu";
     src: url(Rockidz3D3D-xmvj.ttf) format(truetype);
+}
+
+@media (max-width:1200px) {
+    .hosgeldin-mesajı{
+        font-size: 7vh;
+
+    }
+}
+
+@media (max-width:540px) {
+    .hosgeldin-mesajı{
+        font-size: 4vh;
+
+    }
 }
