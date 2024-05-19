@@ -22,9 +22,13 @@
 
     if ($uname == $correct_username && $psw == $correct_password) {
         $target_url = "anaSayfaBasarili.html";
-        header("Location: " . $target_url);   
+        header("Location: " . $target_url);
     } else {
-        header("Location:giris.html?error=1");    
+        // Şifre ya da kullanıcı adı hatalı ise JavaScript ile uyarı mesajı göster
+        echo '<script>alert("Kullanıcı adı veya şifre hatalı!");</script>';
+        // Ardından tekrar giriş sayfasına yönlendir
+        header("refresh:0; url=giris.html?error=1");
+        exit;
     }
     ?>
 
