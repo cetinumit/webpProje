@@ -43,6 +43,12 @@ body {
   margin: 10px;
 }
 
+.checkbox{
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 form div {
   margin-bottom: 10px;
 }

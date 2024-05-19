@@ -1,11 +1,78 @@
 body {
     background-size: 100vw 100vh;
-    background-image: url('pexels-bri-schneiter-28802-346529.jpg');
+    background-image: url('AdobeStock_92824780.jpeg');
   }
   
+  a:hover {
+    color: inherit;
+  }
+  
+  .navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: rgb(245, 245, 245);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #ffffffda;
+  }
+  
+  .navbar-light:hover .navbar-brand:hover {
+    color: rgb(245, 245, 245);
+  }
+  
+  .navbar-light .navbar-brand {
+    color: #ffffffda;
+  }
+  
+  .navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #ffffff;
+  
+  }
+
   .navbar-blurred {
     backdrop-filter: blur(8px);
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 0px;
     padding: 10px;
   }
+
+  #sonuc{
+margin-top: 20px;
+width: 50vw;
+height: auto;
+background-color: whitesmoke;
+box-shadow: 0 0 10px black;
+border-radius: 10px;
+  }
+
+p{
+
+margin: 10px;
+
+}
+
+h2{
+
+  margin: 10px;
+  
+  }
+
+#sonuc:hover{
+
+transform: scale(1.1);
+background-color: rgb(231, 231, 231);
+}
+
+
+.main-container{
+display: flex;
+width: 100%;
+height: auto;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+input{
+margin-top: 20px;
+  width: 25vw;
+}

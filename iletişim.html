@@ -49,7 +49,7 @@
     </nav>
 
 
-    <div id="iletisim">
+    <div id="iletisim" style="padding: 20px;">
         <h1>İletişim Formu</h1>
         <form @submit.prevent="formGönder">
             <div>
@@ -71,13 +71,22 @@
                     <input type="text" id="telefon" v-model="form.telefon">
                     <span v-if="errors.telefon">{{ errors.telefon }}</span>
                 </div>
+                <div class="checkbox">
+                    <label>Cinsiyet: &nbsp;</label>                   
+                    <label for="erkek">Erkek &nbsp;&nbsp;</label>
+                    <input type="radio" id="erkek" value="Erkek" v-model="form.cinsiyet" style="width: 10px; align-self: center;" >
+                    <label for="kadin">&nbsp;&nbsp;&nbsp;Kadın&nbsp;&nbsp;&nbsp;</label>
+                    <input type="radio" id="kadin" value="Kadın" v-model="form.cinsiyet" style="width: 10px; align-self: center;">
+                    <span v-if="errors.cinsiyet">{{ errors.cinsiyet }}</span>
+                </div>
                 <div>
                     <label for="mesaj">Mesaj:</label>
                     <textarea id="mesaj" v-model="form.mesaj"></textarea>
                     <span v-if="errors.mesaj">{{ errors.mesaj }}</span>
                 </div>
                 <div>
-                    <button type="button" @click="formKontrol">Gönder</button>
+                    <button type="button" @click="formKontrol">Vue ile Gönder</button>
+                    <button id="js-gonder-button" type="button" onclick="jsIleGonder()">JS ile Gönder</button>
                     <button type="button" @click="formTemizle">Temizle</button>
                 </div>
         </form>
