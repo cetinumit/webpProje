@@ -3,6 +3,7 @@ new Vue({
     data: {
         form: {
             isim: '',
+            soyad: '',
             email: '',
             Telefon: '',
             mesaj: ''
@@ -16,7 +17,9 @@ new Vue({
             if (!this.form.isim) {
                 this.errors.isim = 'Adınızı giriniz.';
             }
-
+            if (!this.form.soyad) {
+                this.errors.soyad = 'Soyadınızı giriniz.';
+            }
             if (!this.form.email) {
                 this.errors.email = 'E-posta adresinizi giriniz.';
             } else if (!this.emailKontrol(this.form.email)) {
@@ -40,12 +43,12 @@ new Vue({
             return re.test(email);
         },
         formGönder() {
-            // Form verilerini başka bir sayfaya yönlendirme
             localStorage.setItem('formData', JSON.stringify(this.form));
             window.location.href = 'sonuclar.html';
         },
         formTemizle() {
             this.form.isim = '';
+            this.form.soyad = '';
             this.form.email = '';
             this.form.Telefon = '';
             this.form.mesaj = '';

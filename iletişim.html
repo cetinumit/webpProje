@@ -47,7 +47,7 @@
         </li>
         </ul>
     </nav>
- 
+
 
     <div id="iletisim">
         <h1>İletişim Formu</h1>
@@ -58,24 +58,28 @@
                 <span v-if="errors.isim">{{ errors.isim }}</span>
             </div>
             <div>
-                <label for="email">E-posta:</label>
-                <input type="email" id="email" v-model="form.email">
-                <span v-if="errors.email">{{ errors.email }}</span>
-            </div>
-            <div>
-                <label for="telefon">Telefon Numaranız:</label>
-                <input type="text" id="telefon" v-model="form.telefon">
-                <span v-if="errors.telefon">{{ errors.telefon }}</span>
-            </div>
-            <div>
-                <label for="mesaj">Mesaj:</label>
-                <textarea id="mesaj" v-model="form.mesaj"></textarea>
-                <span v-if="errors.mesaj">{{ errors.mesaj }}</span>
-            </div>
-            <div>
-                <button type="button" @click="formKontrol">Gönder</button>
-                <button type="button" @click="formTemizle">Temizle</button>
-            </div>
+                <label for="soyad">Soyadınız:</label>
+                <textarea id="soyad" v-model="form.soyad"></textarea>
+                <span v-if="errors.soyad">{{ errors.soyad }}</span>
+                <div>
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" v-model="form.email">
+                    <span v-if="errors.email">{{ errors.email }}</span>
+                </div>
+                <div>
+                    <label for="telefon">Telefon Numaranız:</label>
+                    <input type="text" id="telefon" v-model="form.telefon">
+                    <span v-if="errors.telefon">{{ errors.telefon }}</span>
+                </div>
+                <div>
+                    <label for="mesaj">Mesaj:</label>
+                    <textarea id="mesaj" v-model="form.mesaj"></textarea>
+                    <span v-if="errors.mesaj">{{ errors.mesaj }}</span>
+                </div>
+                <div>
+                    <button type="button" @click="formKontrol">Gönder</button>
+                    <button type="button" @click="formTemizle">Temizle</button>
+                </div>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
@@ -86,7 +90,7 @@
 
 
 
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
