@@ -29,6 +29,8 @@ new Vue({
 
             if (!this.form.telefon) {
                 this.errors.telefon = 'Telefon Numarası alanını doldurunuz.';
+            } else if (!/^\d+$/.test(this.form.telefon)) { // Telefon numarasının sadece sayı içermesini sağla
+                this.errors.telefon = 'Telefon numarası sadece sayı içermelidir.';
             }
             if (!this.form.cinsiyet) {
                 this.errors.cinsiyet = 'Cinsiyet seçimi gerekli.';
@@ -93,6 +95,8 @@ function jsIleGonder() {
     }
     if (!telefon) {
         errors.telefon = 'Telefon Numarası alanını doldurunuz.';
+    } else if (!/^\d+$/.test(telefon)) { // Telefon numarasının yalnızca sayılardan oluşup oluşmadığını kontrol et
+        errors.telefon = 'Telefon numarası sadece sayı içermelidir.';
     }
     if (!email) {
         errors.email = 'E-posta adresinizi giriniz.';
