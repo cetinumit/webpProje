@@ -28,10 +28,10 @@
     $psw = $_POST['psw'];
 
     if ($uname == $correct_username && $psw == $correct_password) {
-        $target_url = "anaSayfaBasarili.html";
+        $target_url = "https://cetinumit.github.io/webpProje/anaSayfaBasarili.html";
         header("Location: " . $target_url);
     } else {
-        header("Location: giris.html?error=1");
+        header("Location: https://cetinumit.github.io/webpProje/giris.html?error=1");
     }
     ?>
 
